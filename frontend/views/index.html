@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balam Demo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Interfaz de Balam</h1>
+    <section>
+        <button id="loadTransactions">Cargar Transacciones</button>
+        <div id="transactionsList"></div>
+    </section>
+    <section>
+        <h2>Enviar Transacción</h2>
+        <form id="sendTransactionForm">
+            ID del Destinatario: <input type="text" id="recipientId" required><br>
+            Monto: <input type="number" id="amount" required><br>
+            Moneda: <input type="text" id="currency" required><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <button id="loadExchangeRates">Cargar Tasas de Cambio</button>
+        <div id="exchangeRates"></div>
+    </section>
+    <script src="../js/app.js"></script>
+</body>
+</html>
